@@ -1,0 +1,8 @@
+prefix=/home/m23qures/catkin_ws/devel
+
+Name: panda_moveit_demo
+Description: Description of panda_moveit_demo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
