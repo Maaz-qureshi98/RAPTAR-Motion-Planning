@@ -1,6 +1,6 @@
 1. GOTO https://moveit.github.io/moveit_tutorials/ to install the MoveIt Setup as **ws_moveit**.
 2. For Docker setup used uw_panda dir to run the docker container with ROS_Noetic setup.
-# Hardware Setup with ROS1: Go to for ROBOHUB PANDA ARM
+# Hardware Setup with ROS: Go to for ROBOHUB PANDA ARM
 1. https://franka1.robohub.eng.uwaterloo.ca/
 2. Open brakes, (unlock) robot moves a little.
 3. Open hamburger menu -> activate FCI
