@@ -1,3 +1,6 @@
+# Video: 
+https://youtu.be/fgeb6k_P9mg
+
 1. GOTO https://moveit.github.io/moveit_tutorials/ to install the MoveIt Setup as **ws_moveit**.
 2. For Docker setup used uw_panda dir to run the docker container with ROS_Noetic setup.
 # Hardware Setup with ROS: Go to for ROBOHUB PANDA ARM
