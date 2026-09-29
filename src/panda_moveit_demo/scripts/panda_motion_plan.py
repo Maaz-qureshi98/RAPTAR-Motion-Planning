@@ -145,7 +145,7 @@ def main():
     joint_goal[0] = 0.15
     joint_goal[1] = -0.16
     joint_goal[2] = 0.22
-    joint_goal[3] = 2.41
+    joint_goal[3] = -2.41
     joint_goal[4] = 0.10
     joint_goal[5] = 2.25
     joint_goal[6] = 0.6
