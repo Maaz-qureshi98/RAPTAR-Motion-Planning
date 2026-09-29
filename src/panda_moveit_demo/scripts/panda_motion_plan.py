@@ -27,7 +27,7 @@ def get_A_T_G(phi, theta):
     direction_to_center = np.array([-x_position, -y_position, -z_position])
     norm = np.linalg.norm(direction_to_center)
     if norm == 0:
-        direction_to_center = np.array([0.0, 0.0, 1.0])
+        direction_to_center = np.array([0.0, 0.0, -1.0])
     else:
         direction_to_center /= norm  # Normalize
 
@@ -112,6 +112,9 @@ def compute_plan(wpose, move_group):
         return None, np.inf  # Invalid plan
     
     # Calculate joint movement delta
+    q_first = plan.joint_trajectory.points[0].positions
+    q_last = plan.joint_trajectory.points[-1].positions
+    delta = np.linalg.norm(np.array(q_first) - np.array(q_last))
     q_first = plan.joint_trajectory.points[0].positions
     q_last = plan.joint_trajectory.points[-1].positions
     delta = np.linalg.norm(np.array(q_first) - np.array(q_last))
