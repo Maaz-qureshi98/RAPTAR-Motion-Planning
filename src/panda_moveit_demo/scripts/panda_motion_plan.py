@@ -241,7 +241,7 @@ def main():
                 move_group.stop()
                 move_group.clear_pose_targets()
             else:
-                rospy.logwarn("    No valid plan found for this pose. Skipping.")
+                rospy.logwarn("No valid plan found for this pose. Skipping.")
                 continue
 
             # Wait before moving to the next pose (10-second delay after each theta increment)
