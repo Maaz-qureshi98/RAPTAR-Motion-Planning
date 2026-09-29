@@ -115,9 +115,6 @@ def compute_plan(wpose, move_group):
     q_first = plan.joint_trajectory.points[0].positions
     q_last = plan.joint_trajectory.points[-1].positions
     delta = np.linalg.norm(np.array(q_first) - np.array(q_last))
-    q_first = plan.joint_trajectory.points[0].positions
-    q_last = plan.joint_trajectory.points[-1].positions
-    delta = np.linalg.norm(np.array(q_first) - np.array(q_last))
     
     return plan, delta
 
@@ -148,7 +145,7 @@ def main():
     joint_goal[0] = 0.15
     joint_goal[1] = -0.16
     joint_goal[2] = 0.22
-    joint_goal[3] = -2.41
+    joint_goal[3] = 2.41
     joint_goal[4] = 0.10
     joint_goal[5] = 2.25
     joint_goal[6] = 0.6
