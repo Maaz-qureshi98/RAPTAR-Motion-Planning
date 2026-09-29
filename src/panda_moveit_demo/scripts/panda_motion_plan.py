@@ -22,7 +22,6 @@ def get_A_T_G(phi, theta):
     x_position = radius * np.sin(theta) * np.cos(phi)
     y_position = radius * np.sin(theta) * np.sin(phi)
     z_position = radius * np.cos(theta)
-    z_position = radius * np.cos(theta2)
 
     # Calculate direction to the origin for orientation
     direction_to_center = np.array([-x_position, -y_position, -z_position])
@@ -46,7 +45,7 @@ def get_A_T_G(phi, theta):
     rotation_matrix = np.column_stack((x_axis, y_axis, z_axis))
 
     # Build the transformation matrix
-    gripper_frame = np.eye(4)
+    gripper_frame = np.eye(3)
     gripper_frame[:3, :3] = rotation_matrix
     gripper_frame[:3, 3] = np.array([x_position, y_position, z_position])
 
