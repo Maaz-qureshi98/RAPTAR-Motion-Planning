@@ -22,6 +22,7 @@ def get_A_T_G(phi, theta):
     x_position = radius * np.sin(theta) * np.cos(phi)
     y_position = radius * np.sin(theta) * np.sin(phi)
     z_position = radius * np.cos(theta)
+    z_position = radius * np.cos(theta2)
 
     # Calculate direction to the origin for orientation
     direction_to_center = np.array([-x_position, -y_position, -z_position])
