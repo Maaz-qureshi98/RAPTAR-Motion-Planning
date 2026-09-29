@@ -27,7 +27,7 @@ def get_A_T_G(phi, theta):
     direction_to_center = np.array([-x_position, -y_position, -z_position])
     norm = np.linalg.norm(direction_to_center)
     if norm == 0:
-        direction_to_center = np.array([0.0, 0.0, -1.0])
+        direction_to_center = np.array([0.0, 0.0, 1.0])
     else:
         direction_to_center /= norm  # Normalize
 
@@ -45,7 +45,7 @@ def get_A_T_G(phi, theta):
     rotation_matrix = np.column_stack((x_axis, y_axis, z_axis))
 
     # Build the transformation matrix
-    gripper_frame = np.eye(3)
+    gripper_frame = np.eye(4)
     gripper_frame[:3, :3] = rotation_matrix
     gripper_frame[:3, 3] = np.array([x_position, y_position, z_position])
 
