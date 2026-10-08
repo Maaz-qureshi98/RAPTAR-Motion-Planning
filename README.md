@@ -2,7 +2,7 @@
 
 # RAPTAR Motion Planning
 
-**Motion planning code for collision-aware hemispherical scanning with a Franka Emika Panda cobot**
+**Motion planning code for collision-aware hemispherical scanning with a Franka Emika Panda cobot (SIM-to-REAL)**
 
 **Maaz Qureshi, Mohammad Omid Bagheri, William Melek, George Shaker**
 <br>
