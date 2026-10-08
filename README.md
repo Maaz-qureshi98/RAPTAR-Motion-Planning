@@ -10,7 +10,9 @@ University of Waterloo
 
 **IEEE Transactions Journal Paper: Under Review**
 <br>
-<sub>Short version: 2026 IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting (AP-S/URSI) · Detroit, MI, USA</sub>
+**IEEE Conference Paper: Published at [IEEE AP-S/URSI 2026](https://ieeexplore.ieee.org/document/11675413)**
+<br>
+<sub>2026 IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting · Detroit, MI, USA</sub>
 
 [![Journal](https://img.shields.io/badge/IEEE%20Transactions-Under%20Review-lightgrey.svg)](#citation)
 [![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-AP--S%2FURSI%202026-00629B.svg?logo=ieee)](https://ieeexplore.ieee.org/document/11675413)
