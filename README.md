@@ -1,6 +1,6 @@
 <div align="center">
 
-# RAPTAR: Radar Radiation Pattern Acquisition through Automated Collaborative Robotics
+# RAPTAR Motion Planning
 
 **Motion planning code for collision-aware hemispherical scanning with a Franka Emika Panda cobot**
 
@@ -54,7 +54,6 @@ RAPTAR-Motion-Planning/
 │   ├── robohub_setup.md            # lab notes for the UWaterloo RoboHub Panda and Docker setup
 │   └── tf_frames.gv                # TF tree of the Panda (from view_frames)
 ├── media/raptar_demo.gif
-├── CITATION.cff
 └── LICENSE
 ```
 
@@ -105,18 +104,6 @@ rosrun panda_moveit_demo panda_motion_plan.py  # hemispherical scan
 | Goal tolerance | 5 mm / 0.02 rad | Position / orientation |
 | Velocity and acceleration scaling | 0.05 | Slow, safe motion near the device |
 | Dwell per pose | 20 s | Time for the signal analyzer to capture |
-
-## Citation
-
-If you use this code, please cite:
-
-```bibtex
-@misc{qureshi2025raptar,
-  title   = {{RAPTAR}: Radar Radiation Pattern Acquisition through Automated Collaborative Robotics},
-  author  = {Qureshi, Maaz and Bagheri, Mohammad Omid and Elbadrawy, Abdelrahman and Melek, William and Shaker, George},
-  year    = {2025}
-}
-```
 
 ## Acknowledgements
 
