@@ -8,7 +8,6 @@
 <br>
 University of Waterloo
 
-[![arXiv](https://img.shields.io/badge/arXiv-2507.16988-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2507.16988)
 [![Video](https://img.shields.io/badge/YouTube-Demo%20Video-FF0000.svg?logo=youtube)](https://youtu.be/T0bPr-P4mGE)
 [![ROS Noetic](https://img.shields.io/badge/ROS-Noetic-22314E.svg?logo=ros)](http://wiki.ros.org/noetic)
 [![MoveIt](https://img.shields.io/badge/MoveIt-1-blue.svg)](https://moveit.ros.org/)
@@ -112,12 +111,10 @@ rosrun panda_moveit_demo panda_motion_plan.py  # hemispherical scan
 If you use this code, please cite:
 
 ```bibtex
-@article{qureshi2025raptar,
+@misc{qureshi2025raptar,
   title   = {{RAPTAR}: Radar Radiation Pattern Acquisition through Automated Collaborative Robotics},
   author  = {Qureshi, Maaz and Bagheri, Mohammad Omid and Elbadrawy, Abdelrahman and Melek, William and Shaker, George},
-  journal = {arXiv preprint arXiv:2507.16988},
-  year    = {2025},
-  doi     = {10.48550/arXiv.2507.16988}
+  year    = {2025}
 }
 ```
 

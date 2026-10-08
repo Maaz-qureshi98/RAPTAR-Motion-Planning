@@ -7,7 +7,7 @@ authors:
 repository-code: "https://github.com/Maaz-qureshi98/RAPTAR-Motion-Planning"
 license: MIT
 preferred-citation:
-  type: article
+  type: generic
   title: "RAPTAR: Radar Radiation Pattern Acquisition through Automated Collaborative Robotics"
   authors:
     - family-names: Qureshi
@@ -20,7 +20,4 @@ preferred-citation:
       given-names: William
     - family-names: Shaker
       given-names: George
-  journal: "arXiv preprint arXiv:2507.16988"
   year: 2025
-  doi: "10.48550/arXiv.2507.16988"
-  url: "https://arxiv.org/abs/2507.16988"
