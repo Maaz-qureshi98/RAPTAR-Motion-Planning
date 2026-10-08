@@ -8,11 +8,13 @@
 <br>
 University of Waterloo
 
-**2026 IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting (AP-S/URSI)** · Detroit, MI, USA
+**IEEE Transactions Journal Paper: Under Review**
+<br>
+<sub>Short version: 2026 IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting (AP-S/URSI) · Detroit, MI, USA</sub>
 
+[![Journal](https://img.shields.io/badge/IEEE%20Transactions-Under%20Review-lightgrey.svg)](#citation)
 [![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-AP--S%2FURSI%202026-00629B.svg?logo=ieee)](https://ieeexplore.ieee.org/document/11675413)
 [![DOI](https://img.shields.io/badge/DOI-10.1109%2FAP--S%2FUSNC--URSI60190.2026.11675413-blue.svg)](https://doi.org/10.1109/AP-S/USNC-URSI60190.2026.11675413)
-[![Journal](https://img.shields.io/badge/IEEE%20Transactions-Under%20Review-lightgrey.svg)](#citation)
 [![Video](https://img.shields.io/badge/YouTube-Demo%20Video-FF0000.svg?logo=youtube)](https://youtu.be/T0bPr-P4mGE)
 [![ROS Noetic](https://img.shields.io/badge/ROS-Noetic-22314E.svg?logo=ros)](http://wiki.ros.org/noetic)
 [![MoveIt](https://img.shields.io/badge/MoveIt-1-blue.svg)](https://moveit.ros.org/)
