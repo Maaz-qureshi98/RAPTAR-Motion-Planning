@@ -12,6 +12,7 @@
   <license>MIT</license>
 
   <url type="repository">https://github.com/Maaz-qureshi98/RAPTAR-Motion-Planning</url>
+  <url type="website">https://ieeexplore.ieee.org/document/11675413</url>
   <author>Maaz Qureshi</author>
 
   <buildtool_depend>catkin</buildtool_depend>

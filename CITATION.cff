@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use RAPTAR or this code in your research, please cite the IEEE AP-S/URSI 2026 paper below."
+title: "RAPTAR Motion Planning"
+authors:
+  - family-names: Qureshi
+    given-names: Maaz
+repository-code: "https://github.com/Maaz-qureshi98/RAPTAR-Motion-Planning"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Hemispherical Angular Power Mapping of Installed mmWave Radar Modules Under Realistic Deployment Constraints"
+  authors:
+    - family-names: Qureshi
+      given-names: Maaz
+    - family-names: Bagheri
+      given-names: Mohammad Omid
+    - family-names: Melek
+      given-names: William
+    - family-names: Shaker
+      given-names: George
+  collection-title: "2026 IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting (AP-S/URSI)"
+  publisher:
+    name: IEEE
+  conference:
+    name: "IEEE AP-S/URSI 2026"
+    city: Detroit
+    region: MI
+    country: US
+  start: 462
+  end: 465
+  year: 2026
+  doi: "10.1109/AP-S/USNC-URSI60190.2026.11675413"
+  url: "https://ieeexplore.ieee.org/document/11675413"

@@ -4,16 +4,21 @@
 
 **Motion planning code for collision-aware hemispherical scanning with a Franka Emika Panda cobot**
 
-[Maaz Qureshi](https://github.com/Maaz-qureshi98), Mohammad Omid Bagheri, Abdelrahman Elbadrawy, William Melek, George Shaker
+**Maaz Qureshi, Mohammad Omid Bagheri, William Melek, George Shaker**
 <br>
 University of Waterloo
 
+**2026 IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting (AP-S/URSI)** · Detroit, MI, USA
+
+[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-AP--S%2FURSI%202026-00629B.svg?logo=ieee)](https://ieeexplore.ieee.org/document/11675413)
+[![DOI](https://img.shields.io/badge/DOI-10.1109%2FAP--S%2FUSNC--URSI60190.2026.11675413-blue.svg)](https://doi.org/10.1109/AP-S/USNC-URSI60190.2026.11675413)
+[![Journal](https://img.shields.io/badge/IEEE%20Transactions-Under%20Review-lightgrey.svg)](#citation)
 [![Video](https://img.shields.io/badge/YouTube-Demo%20Video-FF0000.svg?logo=youtube)](https://youtu.be/T0bPr-P4mGE)
 [![ROS Noetic](https://img.shields.io/badge/ROS-Noetic-22314E.svg?logo=ros)](http://wiki.ros.org/noetic)
 [![MoveIt](https://img.shields.io/badge/MoveIt-1-blue.svg)](https://moveit.ros.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-### **[▶ Watch the full demo video on YouTube](https://youtu.be/T0bPr-P4mGE)**
+### **[📄 Read the paper on IEEE Xplore](https://ieeexplore.ieee.org/document/11675413)** &nbsp;·&nbsp; **[▶ Watch the demo video on YouTube](https://youtu.be/T0bPr-P4mGE)**
 
 <a href="https://youtu.be/T0bPr-P4mGE">
   <img src="media/raptar_demo.gif" alt="RAPTAR demo: the Panda arm scanning a 60 GHz radar over a hemisphere (click to watch on YouTube)" width="100%">
@@ -23,20 +28,21 @@ University of Waterloo
 
 </div>
 
+> [!IMPORTANT]
+> **If you use RAPTAR or this code in your research, please [cite our IEEE AP-S/URSI 2026 paper](#citation).** An extended journal version is under review at IEEE Transactions.
+
 ---
 
 ## Overview
 
 RAPTAR is a portable, autonomous system that measures the 3D radiation pattern of integrated radar modules **without an anechoic chamber**. A 7-DoF Franka Emika Panda carries the receiver probe across a hemisphere centred on the device under test. MoveIt plans collision-free motions around the table, the device under test and the antenna mounted on the end effector.
 
-This repository contains the ROS/MoveIt motion-planning package used in the paper:
+This repository contains the ROS/MoveIt motion-planning package used in the paper *Hemispherical Angular Power Mapping of Installed mmWave Radar Modules Under Realistic Deployment Constraints*:
 
 - **Hemispherical scan.** Poses are spaced every 10° in azimuth (φ: −180° to 170°) and polar angle (θ: 0° to −70°). At each pose the probe points at the centre of the sphere.
 - **Collision-aware planning.** The table and device under test are added to the planning scene. The antenna mount is modelled as an L-shaped collision object attached to the flange.
 - **Minimal joint motion.** For each pose, RRTConnect plans two goals that differ by a 180° tool roll. The arm runs whichever one needs less joint travel.
 - **Measurement dwell.** The arm holds at each pose so the signal analyzer can record received power.
-
-Results reported in the paper: calibration RMS error below 0.9 mm, angular resolution up to 2.5°, and a mean absolute error below 2 dB against full-wave EM simulation for a 60 GHz radar module.
 
 ## Repository structure
 
@@ -54,6 +60,7 @@ RAPTAR-Motion-Planning/
 │   ├── robohub_setup.md            # lab notes for the UWaterloo RoboHub Panda and Docker setup
 │   └── tf_frames.gv                # TF tree of the Panda (from view_frames)
 ├── media/raptar_demo.gif
+├── CITATION.cff
 └── LICENSE
 ```
 
@@ -104,6 +111,32 @@ rosrun panda_moveit_demo panda_motion_plan.py  # hemispherical scan
 | Goal tolerance | 5 mm / 0.02 rad | Position / orientation |
 | Velocity and acceleration scaling | 0.05 | Slow, safe motion near the device |
 | Dwell per pose | 20 s | Time for the signal analyzer to capture |
+
+## Citation
+
+If you use RAPTAR or this code in your research, **please cite our paper**:
+
+```bibtex
+@inproceedings{qureshi2026hemispherical,
+  title     = {Hemispherical Angular Power Mapping of Installed mmWave Radar Modules Under Realistic Deployment Constraints},
+  author    = {Qureshi, Maaz and Bagheri, Mohammad Omid and Melek, William and Shaker, George},
+  booktitle = {2026 IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting (AP-S/URSI)},
+  address   = {Detroit, MI, USA},
+  pages     = {462--465},
+  year      = {2026},
+  publisher = {IEEE},
+  doi       = {10.1109/AP-S/USNC-URSI60190.2026.11675413}
+}
+```
+
+You can also use the **"Cite this repository"** button in the GitHub sidebar, which reads [`CITATION.cff`](CITATION.cff).
+
+Plain-text citation (IEEE style):
+
+> M. Qureshi, M. O. Bagheri, W. Melek and G. Shaker, "Hemispherical Angular Power Mapping of Installed mmWave Radar Modules Under Realistic Deployment Constraints," in *2026 IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting (AP-S/URSI)*, Detroit, MI, USA, 2026, pp. 462–465, doi: 10.1109/AP-S/USNC-URSI60190.2026.11675413.
+
+> [!NOTE]
+> An extended journal version is under review at IEEE Transactions. This section will be updated when it is published.
 
 ## Acknowledgements
 
