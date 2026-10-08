@@ -205,6 +205,8 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 install(PROGRAMS
+  scripts/add_table.py
+  scripts/attach_rectangle.py
   scripts/panda_motion_plan.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )

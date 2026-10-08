@@ -1,0 +1,25 @@
+# catkin / colcon build outputs
+build/
+devel/
+install/
+log/
+logs/
+.catkin_tools/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Large media (the demo is hosted on YouTube; a GIF preview lives in media/)
+*.mp4
+*.mov
+*.avi
+
+# Papers
+*.pdf
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

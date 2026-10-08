@@ -18,7 +18,7 @@ def get_A_T_G(phi, theta):
     """
     Computes the transformation matrix based on azimuthal and polar angles.
     """
-    radius = 0.17  # Radius of the hemisphere (15 cm)
+    radius = 0.17  # Radius of the hemisphere (17 cm)
     x_position = radius * np.sin(theta) * np.cos(phi)
     y_position = radius * np.sin(theta) * np.sin(phi)
     z_position = radius * np.cos(theta)
@@ -244,8 +244,8 @@ def main():
                 rospy.logwarn("No valid plan found for this pose. Skipping.")
                 continue
 
-            # Wait before moving to the next pose (10-second delay after each theta increment)
-            time.sleep(20.0)  # Add 10-second delay
+            # Dwell at each pose so the signal analyzer can capture the measurement
+            time.sleep(20.0)
 
         if failed:
             break
