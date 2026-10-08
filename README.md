@@ -1,6 +1,6 @@
 <div align="center">
 
-# RAPTAR Motion Planning
+# RAPTAR
 
 **Motion planning code for collision-aware hemispherical scanning with a Franka Emika Panda cobot (SIM-to-REAL)**
 
